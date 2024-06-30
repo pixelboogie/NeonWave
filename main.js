@@ -22,11 +22,11 @@ const response = await fetch(url, {
         Authorization: `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-        messages: [{ role: "user", content: "Tell me a joke" }],
+        messages: [{ role: "user", content: "Tell me a joke about kids." }],
         temperature: 0.6,
         model: "gpt-3.5-turbo",
         // Limiting the tokens during development
-        max_tokens: 30,
+        max_tokens: 30,  //30
         stream: true,
     }),
     // Use the AbortController's signal to allow aborting the request
